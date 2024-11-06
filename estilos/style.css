@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*
+Paleta de cores
+Verde: #49a09d
+Lilás: #5f2c82
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    background-color: white;
+    width:  250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+section#login> div#imagem{
+    background: url(../imagem/foto.jpg) no-repeat #5f2c82 top center;
+    height: 200px;
+    background-size: cover;
+    display: block;
+}
+section#login> div#formulario{
+    padding: 10px;
+    display: block;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+div#formulario>p{
+    font-size: 0.8em;
+   
+}
+ span.material-icons{
+    font-size: 15px;
+}
+form>input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+form>input[type=submit]:hover{
+    background-color: #316b69;
+    transition-duration: .3s;
+}
+form> button{
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+form> button>a.botao{
+    display: block;
+    text-align: center;
+    font: 0.8em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    text-decoration: none;
+    color: #316b69;
+    border-radius: 10px;
+    padding-top: 8px;
+    margin-top: 5px;
+    border: #49a09d 1px solid;
+}
+form> button>a.botao:hover{
+    background-color: #316b69;
+    color: white;
+    transition: .3s;
+}
+form> div.campo{
+    background-color: #5f2c82;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px 5px;
+}
+div.campo>label{
+    display: none;
+
+}
+span#caixa{
+    font-size: 1.1em;
+}
